@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - search_book_by_name
+  - provide_book_name
+  - search_book_by_subject
+  - provide_subject
+  - search_book_by_author
+  - provide_author
+  - out_of_scope
+  - request_popular_books
+
+actions:
+  - action_capture_book_name
+  - action_capture_subject
+  - action_capture_author
+  - action_recommend_popular_books
+
+slots: 
+  book_name:
+    type: text
+    mappings:
+      - type: from_text
+
+  subject:
+    type: text
+    mappings:
+      - type: from_text
+
+  author:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+  - text: "Welcome! I'm BookBot, your personal AI book guide."
+
+  utter_search_method:
+  - text: "Would you like to search for books by name, subject, popularity or author?"  
+  
+  utter_goodbye:
+  - text: "Goodbye! Happy reading!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_book_name:
+  - text: "What is the book name?"
+
+  utter_ask_subject:
+  - text: "What subject are you looking for?"
+
+  utter_ask_author:
+  - text: "What is the name of the author?"
+
+  utter_did_not_understand:
+  - text: I'm sorry, I didn't quite understand that.
+
+  utter_out_of_scope:
+  - text: I'm sorry, I can't handle that request.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

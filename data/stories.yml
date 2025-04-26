@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_search_method
+
+- story: search books by name
+  steps:
+  - intent: search_book_by_name
+  - action: utter_ask_book_name
+  - intent: provide_book_name
+  - action: action_capture_book_name
+
+- story: search books by subject
+  steps:
+  - intent: search_book_by_subject
+  - action: utter_ask_subject
+  - intent: provide_subject
+  - action: action_capture_subject
+
+- story: search books by author
+  steps:
+  - intent: search_book_by_author
+  - action: utter_ask_author
+  - intent: provide_author
+  - action: action_capture_author
+
+- story: request popular books
+  steps:
+  - intent: request_popular_books
+  - action: action_recommend_popular_books
+
+

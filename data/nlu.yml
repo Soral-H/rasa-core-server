@@ -1,0 +1,329 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - heyy
+    - hello
+    - heloo
+    - hi
+    - hii
+    - hello there
+    - good morning
+    - good evening
+    - good afternoon
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - goodafternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - by
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thanks
+    - thank you
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: search_book_by_name
+  examples: |
+    - name
+    - by name
+    - search by name
+    - search for books by name
+    - I want to look for books by name
+    - title
+    - book title
+    - I'm looking for a specific book
+    - Show me books by their title
+    - I need to search for a book name
+  
+- intent: provide_book_name
+  examples: |
+    - harry potter
+    - moby dick
+    - war and peace
+    - 1984
+    - the power of now
+    - To Kill a Mockingbird
+    - Pride and Prejudice
+    - The Great Gatsby
+    - The Catcher in the Rye
+    - The Lord of the Rings
+    - The Hobbit
+    - Brave New World
+    - The Alchemist
+    - The Diary of a Young Girl
+    - Frankenstein
+    - the untethered soul
+
+- intent: search_book_by_subject
+  examples: |
+    - subject
+    - by subject
+    - search by subject
+    - search for books by subject
+    - I want to look for books by subject
+    - I'm looking for specific subject
+    - Show me books by their subject
+    - I need to search for a book subjects
+
+- intent: provide_subject
+  examples: |
+    - art
+    - architecture
+    - art
+    - dance
+    - design
+    - fashion
+    - film
+    - graphic design
+    - music
+    - painting
+    - photography
+    - animals
+    - bears
+    - cats
+    - kittens
+    - dogs
+    - puppies
+    - fiction
+    - non fiction
+    - non-fiction
+    - fantasy
+    - horror
+    - humor
+    - literature
+    - magic
+    - mystery
+    - detective
+    - stories
+    - plays
+    - poetry
+    - romance
+    - science fiction
+    - sci-fi
+    - short stories
+    - thriller
+    - love
+    - young adult
+    - biology
+    - chemistry
+    - mathematics
+    - physics
+    - programming
+    - management
+    - entrepreneurship
+    - economics
+    - success
+    - finance
+    - children
+    - kids books
+    - rhyme
+    - baby books
+    - bedtime books
+    - picture books
+    - history
+    - ancient 
+    - civilization
+    - archaeology
+    - anthropology
+    - world war ii
+    - social life
+    - health
+    - wellness
+    - cooking
+    - cookbooks
+    - mental health
+    - exercise
+    - nutrition
+    - self help
+    - biography
+    - autobiographies
+    - politics
+    - government
+    - women
+    - kings
+    - rulers
+    - composers
+    - artists
+    - comedy
+    - social sciences
+    - religion
+    - spiritual
+    - political science
+    - psychology
+    - geography
+    - algebra
+    - education
+    - business
+    - science
+
+- intent: search_book_by_author
+  examples: |
+    - author
+    - by author
+    - search by author
+    - search for books by author
+    - I want to look for books by author
+    - I'm looking for specific author
+    - Show me books by their author
+
+- intent: provide_author
+  examples: |
+    - william shakespeare
+    - jane austen
+    - mark twain
+    - charles dickens
+    - george orwell
+    - ernest hemingway
+    - f scott fitzgerald
+    - j k rowling
+    - j r r tolkien
+    - agatha christie
+    - leo tolstoy
+    - fyodor dostoevsky
+    - virginia woolf
+    - harper lee
+    - gabriel garcía márquez
+    - homer
+    - mary shelley
+    - oscar wilde
+    - stephen king
+    - edgar allan poe
+    - charlotte bronte
+    - herman melville
+    - aldous huxley
+    - victor hugo
+    - dante alighieri
+    - franz kafka
+    - h g wells
+    - jules verne
+    - arthur conan doyle
+    - c s lewis
+    - kurt vonnegut
+    - margaret atwood
+    - sylvia plath
+    - james joyce
+    - toni morrison
+    - haruki murakami
+    - chinua achebe
+    - philip k dick
+    - ray bradbury
+    - robert greene
+    - robert green
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - Can you tell me a joke?
+    - How's the weather today?
+    - I need a taxi.
+    - What's your favorite color?
+    - Can you play music?
+    - Tell me a story.
+    - I want to book a flight.
+    - What's the latest news?
+    - How do I make a cake?
+    - Can you recommend a movie?
+    - What's the capital of France?
+    - I want to buy a ticket for a concert.
+    - Can you help me with my homework?
+    - What's the time in New York?
+    - I need directions to the nearest gas station.
+    - Can you remind me to call my mom?
+    - What's the best restaurant in town?
+    - How do I get to the airport?
+    - Can you help me find a job?
+    - What's the score of the game?
+    - I want to learn a new language.
+    - What's the meaning of life?
+    - How do I fix my computer?
+    - Can you tell me about the stock market?
+    - I want to learn how to play guitar.
+    - What's your opinion on climate change?
+    - Can you help me with my taxes?
+    - I want to learn how to cook.
+    - What's the best way to lose weight?
+    - Can you tell me about the latest smartphone?
+    - How do I change a tire?
+    - What's the best way to travel to Europe?
+    - Can you give me investment advice?
+    - I want to know about the history of the internet.
+    - How do I start a blog?
+    - Can you help me with my resume?
+    - What's the best way to study for exams?
+    - Can you tell me a fun fact?
+    - How do I get a driver's license?
+    - What's the best way to save money?
+    - Can you recommend a workout routine?
+    - How do I meditate?
+    - What's the best way to clean my house?
+    - Can you help me plan a vacation?
+    - What's the latest fashion trend?
+    - How do I start a garden?
+    - Can you tell me about famous artists?
+    - What's the best way to network professionally?
+    - How do I write a cover letter?
+    - Can you help me with my pet?
+    - What's the best way to improve my public speaking?
+    - How do I create a budget?
+    - Can you tell me about different cultures?
+    - What's the best way to learn programming?
+    - How do I deal with stress?
+    - Can you help me find a therapist?
+    - What's the best way to recycle?
+
+- intent: request_popular_books
+  examples: |
+    - what are some popular books?
+    - what are some book recommendations?
+    - can you suggest some popular books?
+    - I'm looking for popular book titles.
+    - what books are trending right now?
+    - tell me about some bestsellers.
+    - what are the must-read books?
+    - can you recommend any good books?
+    - what are the top-rated books?
+    - give me a list of popular books.
+    - what are some famous books I should read?
+    - what books do people love right now?
+    - suggest some well-known books.
+    - what are the current popular reads?
+    - what are some classic popular books?
+    - can you list some popular novels?
+    - what are the best books of the year?
+    - what are some highly recommended books?
+    - what books are everyone talking about?
+    - what are some high rating books?
+    - can you tell me about popular books?
+    - popular books
+    - high rating books
+    - cool books
+    - famous books
+    - the best books
+    - life changing books
+    - popular
+    - famous
+    - high-rating
